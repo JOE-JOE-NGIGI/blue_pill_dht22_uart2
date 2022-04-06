@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dht22_bluepill\startup_stm32f103xb.o"
+"dht22_bluepill\main.o"
+"dht22_bluepill\stm32f1xx_it.o"
+"dht22_bluepill\stm32f1xx_hal_msp.o"
+"dht22_bluepill\dht22.o"
+"dht22_bluepill\stm32f1xx_hal_gpio_ex.o"
+"dht22_bluepill\stm32f1xx_hal_tim.o"
+"dht22_bluepill\stm32f1xx_hal_tim_ex.o"
+"dht22_bluepill\stm32f1xx_hal_uart.o"
+"dht22_bluepill\stm32f1xx_hal.o"
+"dht22_bluepill\stm32f1xx_hal_rcc.o"
+"dht22_bluepill\stm32f1xx_hal_rcc_ex.o"
+"dht22_bluepill\stm32f1xx_hal_gpio.o"
+"dht22_bluepill\stm32f1xx_hal_dma.o"
+"dht22_bluepill\stm32f1xx_hal_cortex.o"
+"dht22_bluepill\stm32f1xx_hal_pwr.o"
+"dht22_bluepill\stm32f1xx_hal_flash.o"
+"dht22_bluepill\stm32f1xx_hal_flash_ex.o"
+"dht22_bluepill\stm32f1xx_hal_exti.o"
+"dht22_bluepill\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "dht22_bluepill\dht22_bluepill.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dht22_bluepill.map" -o dht22_bluepill\dht22_bluepill.axf
